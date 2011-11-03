@@ -1,3 +1,9 @@
+# revision 18703
+# category Package
+# catalog-ctan /macros/latex/contrib/epspdfconversion
+# catalog-date 2010-06-02 10:36:47 +0200
+# catalog-license lppl
+# catalog-version 0.61
 Name:		texlive-epspdfconversion
 Version:	0.61
 Release:	1
@@ -44,6 +50,7 @@ to the epspdf converter.
 %doc %{_texmfdistdir}/doc/latex/epspdfconversion/example/image.eps
 %doc %{_texmfdistdir}/doc/latex/epspdfconversion/example/image2.eps
 %doc %{_texmfdistdir}/doc/latex/epspdfconversion/example/optionstable.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -54,3 +61,5 @@ to the epspdf converter.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
