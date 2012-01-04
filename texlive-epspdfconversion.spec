@@ -6,7 +6,7 @@
 # catalog-version 0.61
 Name:		texlive-epspdfconversion
 Version:	0.61
-Release:	1
+Release:	2
 Summary:	On-the-fly conversion of EPS to PDF
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/epspdfconversion
