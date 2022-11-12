@@ -1,18 +1,12 @@
-# revision 18703
-# category Package
-# catalog-ctan /macros/latex/contrib/epspdfconversion
-# catalog-date 2010-06-02 10:36:47 +0200
-# catalog-license lppl
-# catalog-version 0.61
 Name:		texlive-epspdfconversion
-Version:	0.61
-Release:	11
+Version:	18703
+Release:	1
 Summary:	On-the-fly conversion of EPS to PDF
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/epspdfconversion
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/epspdfconversion.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/epspdfconversion.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/epspdfconversion.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/epspdfconversion.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ conversion options (such as grayscale, prepress or pdfversion)
 to the epspdf converter.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -44,24 +38,10 @@ to the epspdf converter.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.61-2
-+ Revision: 751534
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.61-1
-+ Revision: 718353
-- texlive-epspdfconversion
-- texlive-epspdfconversion
-- texlive-epspdfconversion
-- texlive-epspdfconversion
-
