@@ -1,6 +1,6 @@
 Name:		texlive-epspdfconversion
 Version:	18703
-Release:	1
+Release:	2
 Summary:	On-the-fly conversion of EPS to PDF
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/epspdfconversion
