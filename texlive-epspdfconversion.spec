@@ -3,7 +3,7 @@ Version:	18703
 Release:	2
 Summary:	On-the-fly conversion of EPS to PDF
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/epspdfconversion
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/epspdfconversion
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/epspdfconversion.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/epspdfconversion.doc.r%{version}.tar.xz
